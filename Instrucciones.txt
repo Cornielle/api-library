@@ -1,0 +1,45 @@
+Buenos dias equipo de Soluciones GBH,
+
+Disculpen la tardanza , ya que tuve ciertos percances personales mas las dificultades tecnicas del proyecto y 
+debo admitir que la sida divertida. Tomando en cuenta los puntos mencionados anteriormente procedo a aclarar los detalles
+tecnicos e indicar que ya esta disponible la prueba suministrada.
+
+Setup del proyecto: En primer lugar , luego de bajar o clonar del repositorio , se debe hacer "npm install" para 
+agregar en el proyecto librerias que considere necesarias como : dotenv(proteccion de credenciales) y
+mysql. 
+
+Para correr el proyecto solo basta con indicar el comando "node index.js" y ya se pueden utilizar los endpoints.
+
+Como indica las reglas iniciales , no utilice ningun Framework como express y demas. El .gitignore
+solo omite el .env y el node_modules por lo que sea mas rapido la instalacion.
+
+El proyecto lo realice utilizando MYSQL , es decir sin ese manejador de base de datos el proyecto no puede correr.
+
+Antes de consultar cualquier endpoint, primero se debe acceder a esta ruta:
+
+    "${DOMAIN}/migrate" : Este procedera a crear la base de datos , crear la tabla y llenar la misma con libros de prueba.
+    los libros en su origen tienen algunos caracteres sin compatibilidad , pero para ganar tiempo me enfoque en la
+    parte funcional.
+
+    Luego de migrar La base de datos y la informacion podran hacer lo siguiente:
+
+1 - Ver listado de libros:
+
+    Para ver el listado de libros disponibles deben acceder a "${DOMAIN}/books"
+    Mediante el id pueden referenciarse a uno en especifico.
+
+2 - Visualizar un libro:
+
+    Para ver un libro en especifico y todo su contenido (titulo y contenido) deben acceder a "${DOMAIN}/book/${book_id}/${html or text}"
+    ex:localhost/book/2/html, el ulitmo parámetro puede solo ser "html" para archivos HTML o text para archivos "TXT".
+
+3 - Visualizar por página de un libro en el formato deseado.
+
+    Para ver una página en especifico deben utilizar el siguiente formato de hipervinculo: ${DOMAIN}/book/${book_id}/page/${page_id}/${html or txt format}
+    ex:localhost/book/2/page/9/txt, el ulitmo parámetro puede solo ser "html" para archivos HTML o text para archivos "TXT".
+
+Si tienen alguna inquietud con respecto al mismo favor indicarme. Esta explicacion estara dentro del proyecto por igual.
+
+Se despide,
+
+Brian Cornielle

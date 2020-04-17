@@ -1,0 +1,16 @@
+{
+  "name": "gbh-api-biblioteca",
+  "version": "0.0.1",
+  "description": "Api biblioteca prueba",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Brian Cornielle",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "formidable": "^1.2.2",
+    "mysql": "^2.18.1"
+  }
+}
