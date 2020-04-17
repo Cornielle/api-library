@@ -38,7 +38,10 @@ Antes de consultar cualquier endpoint, primero se debe acceder a esta ruta:
     Para ver una página en especifico deben utilizar el siguiente formato de hipervinculo: ${DOMAIN}/book/${book_id}/page/${page_id}/${html or txt format}
     ex:localhost/book/2/page/9/txt, el ulitmo parámetro puede solo ser "html" para archivos HTML o text para archivos "TXT".
 
-Si tienen alguna inquietud con respecto al mismo favor indicarme. Esta explicacion estara dentro del proyecto por igual.
+Si tienen alguna inquietud con respecto al mismo favor indicarme. 
+Esta explicacion estara dentro del proyecto por igual.
+
+merge request del proyecto: https://gitlab.com/gbh-candidates/brian-cornielle-batista---cornielle---2020-4-15-library-api---js/-/merge_requests/1
 
 Se despide,
 
