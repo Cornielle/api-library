@@ -1,6 +1,5 @@
 const migration = require("./database/migration");
 const books =  require("./controllers/booksController");
-const readme =  require("./controllers/readmeController");
 function route (path,req, resp, url) {
     if(path === "/"){
         resp.writeHead(200, {'Content-Type': 'text/html'});
